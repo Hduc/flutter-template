@@ -1,0 +1,37 @@
+name: dating_app
+description: A new Flutter project.
+version: 1.0.0+1
+environment: 
+  sdk: '>=3.0.3 <4.0.0'
+dependencies: 
+  flutter: 
+    sdk: flutter
+
+  url_launcher: ^6.3.0
+  get:
+  flutter_screenutil: ^5.9.3
+  image_picker: ^1.1.2
+  file:
+  dots_indicator: ^3.0.0
+  connectivity_plus:
+  shared_preferences:
+  cached_network_image: ^3.4.1
+  flutter_svg: ^2.0.10+1
+  country_pickers:
+  carousel_slider: ^5.0.0
+  smooth_page_indicator: ^1.2.0+3
+  pin_code_fields: ^8.0.1
+  sms_autofill: ^2.4.0
+  pin_input_text_field: ^4.5.2
+  intl: ^0.19.0
+  colorful_safe_area: ^1.0.0
+
+dev_dependencies: 
+  flutter_test: 
+    sdk: flutter
+flutter: 
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+

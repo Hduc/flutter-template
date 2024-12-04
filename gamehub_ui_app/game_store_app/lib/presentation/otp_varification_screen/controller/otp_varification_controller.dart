@@ -1,0 +1,9 @@
+import 'package:game_store_app/core/app_export.dart';import 'package:game_store_app/presentation/otp_varification_screen/models/otp_varification_model.dart';import 'package:sms_autofill/sms_autofill.dart';import 'package:flutter/material.dart';class OtpVarificationController extends GetxController with  CodeAutoFill {Rx<TextEditingController> otpController = TextEditingController().obs;
+
+Rx<OtpVarificationModel> otpVarificationModelObj = OtpVarificationModel().obs;
+
+@override void codeUpdated() { otpController.value.text = code!; } 
+@override void onInit() { super.onInit(); listenForCode(); } 
+@override void onReady() { super.onReady(); } 
+@override void onClose() { super.onClose(); } 
+ }

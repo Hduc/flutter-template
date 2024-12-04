@@ -1,0 +1,51 @@
+name: ai_app_flutter
+description: A new Flutter project.
+version: 1.0.0+1
+environment: 
+  sdk: '>=3.2.0-199.0.dev <4.0.0'
+#  sdk: '>=2.19.0 <3.0.0'
+dependencies:
+  flutter: 
+    sdk: flutter
+
+
+
+  get: ^4.6.6
+#  connectivity_plus: ^2.3.6
+  shared_preferences: ^2.2.3
+  cached_network_image: ^3.3.1
+  flutter_svg: ^2.0.10+1
+#  flutter_svg_provider: ^1.0.3
+  smooth_page_indicator: ^1.1.0
+  dotted_border: ^2.1.0
+  intl: ^0.19.0
+  url_launcher:
+  flutter_share: ^2.0.0
+#  flutter_slidable: ^3.0.0
+dev_dependencies: 
+  flutter_test: 
+    sdk: flutter
+flutter: 
+  uses-material-design: true
+
+  fonts: 
+    - family: AirbnbCereal_W_Bd
+      fonts: 
+        - asset: assets/fonts/AirbnbCerealWBd.ttf
+          weight: 700
+    - family: Circular Std
+      fonts: 
+        - asset: assets/fonts/CircularStdBook.ttf
+          weight: 500
+    - family: AirbnbCereal_W_Md
+      fonts: 
+        - asset: assets/fonts/AirbnbCerealWMd.ttf
+          weight: 500
+    - family: AirbnbCereal_W_Lt
+      fonts: 
+        - asset: assets/fonts/AirbnbCerealWLt.ttf
+          weight: 300
+    - family: AirbnbCereal_W_XBd
+      fonts: 
+        - asset: assets/fonts/AirbnbCerealWXBd.ttf
+          weight: 800
