@@ -2,12 +2,12 @@ name: dating_app
 description: A new Flutter project.
 version: 1.0.0+1
 environment: 
-  sdk: '>=3.0.3 <4.0.0'
+  sdk: '>=3.4.3 <4.0.0'
 dependencies: 
   flutter: 
     sdk: flutter
 
-  url_launcher: ^6.3.0
+
   get:
   flutter_screenutil: ^5.9.3
   image_picker: ^1.1.2
@@ -34,4 +34,29 @@ flutter:
   assets:
     - assets/
     - assets/images/
-
+    - lib/presentation/home_page/models/
+  fonts: 
+    - family: SF Pro Display
+      fonts: 
+        - asset: assets/fonts/SFProDisplayBold.ttf
+          weight: 700
+        - asset: assets/fonts/SFProDisplayRegular.ttf
+          weight: 400
+        - asset: assets/fonts/SFProDisplaySemibold.ttf
+          weight: 600
+    - family: SF Pro Text
+      fonts: 
+        - asset: assets/fonts/SFProTextSemibold.ttf
+          weight: 600
+        - asset: assets/fonts/SFProTextRegular.ttf
+          weight: 400
+    - family: Open Sans
+      fonts: 
+        - asset: assets/fonts/OpenSansRegular.ttf
+          weight: 400
+    - family: Rubik
+      fonts: 
+        - asset: assets/fonts/RubikMedium.ttf
+          weight: 500
+        - asset: assets/fonts/RubikRegular.ttf
+          weight: 400

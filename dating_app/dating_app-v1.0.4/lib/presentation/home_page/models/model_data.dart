@@ -1,5 +1,5 @@
 import '../../../core/utils/image_constant.dart';
-
+import '../../chats_two_page/models/chats_two_model.dart';
 import '../../notification_screen/models/notification_model.dart';
 import 'home_model.dart';
 
@@ -72,7 +72,56 @@ class HomeModelData{
     ];
   }
 
+  static List<ChatsTwoModel> chatList() {
+    return [
+      ChatsTwoModel(
+        name: 'Jane cooper',
+        image: ImageConstant.person2,
+        lastMessage: 'Awesome',
+        time: '22:00',
+        unseen: false,
+      ),
+      ChatsTwoModel(
+        name: 'Jenny wilson',
+        image: ImageConstant.person1,
+        lastMessage: 'Hello',
+        time: '23:00',
+        unseen: true,
+      ),
+      ChatsTwoModel(
+        name: 'Cody fisher',
+        image: ImageConstant.person3,
+        lastMessage: 'Hyy',
+        time: '10:00',
+        unseen: false,
+      ),
+      ChatsTwoModel(
+        name: 'Annette black',
+        image: ImageConstant.person5,
+        lastMessage: 'How are you',
+        time: '12:00',
+        unseen: false,
+      ),
+      ChatsTwoModel(
+        name: 'Jerome bell',
+        image: ImageConstant.person4,
+        lastMessage: 'what about you',
+        time: '20:00',
+        unseen: false,
+      ),
+      ChatsTwoModel(
+        name: 'Courtney henry',
+        image: ImageConstant.person3,
+        lastMessage: 'fine and what about you',
+        time: '18:00',
+        unseen: false,
+      ),
 
+
+
+
+    ];
+  }
   static List<String> interest=[
     'Comedy',
     'Book',

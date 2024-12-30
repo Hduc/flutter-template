@@ -1,5 +1,5 @@
 import 'package:dating_app/core/app_export.dart';
-
+import 'package:dating_app/presentation/chats_two_page/chats_two_page.dart';
 import 'package:dating_app/presentation/likes_list_page/likes_list_page.dart';
 import 'package:dating_app/presentation/location_access_container_page/location_access_container_page.dart';
 import 'package:dating_app/presentation/profile_page/profile_page.dart';
@@ -168,7 +168,8 @@ class LocationAccessContainer1Screen
         return LocationAccessContainerPage();
       case AppRoutes.likesListPage:
         return LikesListPage();
-
+      case AppRoutes.chatsTwoPage:
+        return ChatsTwoPage();
       case AppRoutes.profilePage:
         return ProfilePage();
       default:
@@ -178,7 +179,7 @@ class LocationAccessContainer1Screen
   List<Widget> pageList =[
     LocationAccessContainerPage(),
     LikesListPage(),
-
+    ChatsTwoPage(),
     ProfilePage(),
 
   ];

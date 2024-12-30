@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';import 'package:get/get.dart';import 'package:images_picker/images_picker.dart';class FileManager {showModelSheetForImage({int maxFileSize = 10 * 1024, List<String> allowedExtensions = const [], void Function(List<String?>)? getImages}) async  {                 await Get.bottomSheet(
+import 'package:flutter/material.dart';import 'package:get/get.dart';
+
+import '../../images_picker.dart';class FileManager {showModelSheetForImage({int maxFileSize = 10 * 1024, List<String> allowedExtensions = const [], void Function(List<String?>)? getImages}) async  {                 await Get.bottomSheet(
         SafeArea(
           child: Wrap(
             children: <Widget>[

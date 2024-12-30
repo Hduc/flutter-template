@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../core/utils/appbar.dart';
-
+import '../gender_screen/controller/gender_controller.dart';
+import '../gender_screen/select_card.dart';
 import 'controller/interested_controller.dart';
 
 class InterestedScreen extends GetWidget<InterestedController> {
@@ -39,7 +40,38 @@ class InterestedScreen extends GetWidget<InterestedController> {
              SizedBox(
                height: getSize(24),
              ),
+             Expanded(
+               child: GetBuilder<GenderController>(builder: (controller) {
+                return   Container(
+                 // height: 177.h,
+                 width: double.infinity,
+                 child: GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2, // Adjust as per your requirement
+                      crossAxisSpacing:getSize(20),
+                      mainAxisSpacing: 0.h,
+                      mainAxisExtent: getSize(177)
+                  ),
+                  itemCount: 2,
+                  padding: EdgeInsets.symmetric(horizontal: getSize(16)),
+                  physics: NeverScrollableScrollPhysics(),
+                  scrollDirection: Axis.vertical,
+                  itemBuilder: (context, index) {
+                   return InkWell(
+                    onTap: () {
+                     controller.select(index);
+                     controller.update();
 
+                    },
+                    child: SelectCard(
+                     genderImg: controller.genderImg[index].img,
+                     isSelect:controller.sizeIndex.value ==index, ),
+                   );
+                  },
+                 ),
+                );
+               },init: GenderController(),),
+             )
             ],
         ),
         bottomNavigationBar: CustomElevatedButton(

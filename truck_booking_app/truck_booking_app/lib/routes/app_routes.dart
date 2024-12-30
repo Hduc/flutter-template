@@ -1,4 +1,3 @@
-import 'package:truck_booking_app/main_project.dart';
 import 'package:truck_booking_app/presentation/iphone_14_plus_one_screen/iphone_14_plus_one_screen.dart';
 import 'package:truck_booking_app/presentation/iphone_14_plus_one_screen/binding/iphone_14_plus_one_binding.dart';
 import 'package:truck_booking_app/presentation/splash_screen/splash_screen.dart';
@@ -21,17 +20,24 @@ import 'package:truck_booking_app/presentation/forgot_password_four_screen/sign_
 import 'package:truck_booking_app/presentation/forgot_password_four_screen/binding/forgot_password_four_binding.dart';
 import 'package:truck_booking_app/presentation/home_four_container_screen/home_four_container_screen.dart';
 import 'package:truck_booking_app/presentation/home_four_container_screen/binding/home_four_container_binding.dart';
-
+import 'package:truck_booking_app/presentation/search_screen/search_screen.dart';
+import 'package:truck_booking_app/presentation/search_screen/binding/search_binding.dart';
+import 'package:truck_booking_app/presentation/search_one_screen/search_one_screen.dart';
+import 'package:truck_booking_app/presentation/search_one_screen/binding/search_one_binding.dart';
 import 'package:truck_booking_app/presentation/home_five_screen/home_five_screen.dart';
 import 'package:truck_booking_app/presentation/home_five_screen/binding/home_five_binding.dart';
 import 'package:truck_booking_app/presentation/home_one_screen/home_one_screen.dart';
 import 'package:truck_booking_app/presentation/home_one_screen/binding/home_one_binding.dart';
-
+import 'package:truck_booking_app/presentation/select_truck_screen/select_truck_screen.dart';
+import 'package:truck_booking_app/presentation/select_truck_screen/binding/select_truck_binding.dart';
 import 'package:truck_booking_app/presentation/truck_detail_screen/truck_detail_screen.dart';
 import 'package:truck_booking_app/presentation/truck_detail_screen/binding/truck_detail_binding.dart';
 import 'package:truck_booking_app/presentation/truck_detail_two_screen/truck_detail_two_screen.dart';
 import 'package:truck_booking_app/presentation/truck_detail_two_screen/binding/truck_detail_two_binding.dart';
-
+import 'package:truck_booking_app/presentation/select_payment_method_screen/select_payment_method_screen.dart';
+import 'package:truck_booking_app/presentation/select_payment_method_screen/binding/select_payment_method_binding.dart';
+import 'package:truck_booking_app/presentation/profile_one_screen/profile_one_screen.dart';
+import 'package:truck_booking_app/presentation/profile_one_screen/binding/profile_one_binding.dart';
 import 'package:truck_booking_app/presentation/view_information_one_screen/view_information_one_screen.dart';
 import 'package:truck_booking_app/presentation/view_information_one_screen/binding/view_information_one_binding.dart';
 import 'package:truck_booking_app/presentation/view_information_screen/view_information_screen.dart';
@@ -50,7 +56,8 @@ import 'package:truck_booking_app/presentation/add_new_card_one_screen/add_new_c
 import 'package:truck_booking_app/presentation/add_new_card_one_screen/binding/add_new_card_one_binding.dart';
 import 'package:truck_booking_app/presentation/add_new_card_screen/add_new_card_screen.dart';
 import 'package:truck_booking_app/presentation/add_new_card_screen/binding/add_new_card_binding.dart';
-
+import 'package:truck_booking_app/presentation/payment_screen/payment_screen.dart';
+import 'package:truck_booking_app/presentation/payment_screen/binding/payment_binding.dart';
 import 'package:truck_booking_app/presentation/truck_detail_one_screen/truck_detail_one_screen.dart';
 import 'package:truck_booking_app/presentation/truck_detail_one_screen/binding/truck_detail_one_binding.dart';
 import 'package:truck_booking_app/presentation/home1_screen/home1_screen.dart';
@@ -71,7 +78,6 @@ class AppRoutes {
   static const String iphone14PlusOneScreen = '/iphone_14_plus_one_screen';
 
   static const String splashScreen = '/splash_screen';
-  static const String mainproject = '/main_project';
 
   static const String onboardingOneScreen = '/onboarding_one_screen';
 
@@ -173,13 +179,6 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: mainproject,
-      page: () => MainProject(),
-      bindings: [
-        SplashBinding(),
-      ],
-    ),
-    GetPage(
       name: onboardingOneScreen,
       page: () => OnboardingOneScreen(),
       bindings: [
@@ -249,7 +248,20 @@ class AppRoutes {
         HomeFourContainerBinding(),
       ],
     ),
-
+    GetPage(
+      name: searchScreen,
+      page: () => SearchScreen(),
+      bindings: [
+        SearchBinding(),
+      ],
+    ),
+    GetPage(
+      name: searchOneScreen,
+      page: () => SearchOneScreen(),
+      bindings: [
+        SearchOneBinding(),
+      ],
+    ),
     GetPage(
       name: homeFiveScreen,
       page: () => HomeFiveScreen(),
@@ -264,7 +276,13 @@ class AppRoutes {
         HomeOneBinding(),
       ],
     ),
-
+    GetPage(
+      name: selectTruckScreen,
+      page: () => SelectTruckScreen(),
+      bindings: [
+        SelectTruckBinding(),
+      ],
+    ),
     GetPage(
       name: truckDetailScreen,
       page: () => TruckDetailScreen(),
@@ -279,7 +297,20 @@ class AppRoutes {
         TruckDetailTwoBinding(),
       ],
     ),
-
+    GetPage(
+      name: selectPaymentMethodScreen,
+      page: () => SelectPaymentMethodScreen(),
+      bindings: [
+        SelectPaymentMethodBinding(),
+      ],
+    ),
+    GetPage(
+      name: profileOneScreen,
+      page: () => ProfileOneScreen(),
+      bindings: [
+        ProfileOneBinding(),
+      ],
+    ),
     GetPage(
       name: viewInformationOneScreen,
       page: () => ViewInformationOneScreen(),
@@ -343,7 +374,13 @@ class AppRoutes {
         AddNewCardBinding(),
       ],
     ),
-
+    GetPage(
+      name: paymentScreen,
+      page: () => PaymentScreen(),
+      bindings: [
+        PaymentBinding(),
+      ],
+    ),
     GetPage(
       name: truckDetailOneScreen,
       page: () => TruckDetailOneScreen(),

@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:truck_booking_app/main_project.dart';
+import 'package:truck_booking_app/presentation/profile_one_screen/profile_one_screen.dart';
 
 import '../../widgets/custom_page.dart';
 import '../home_screen_main/home_main_screen.dart';
@@ -66,7 +66,7 @@ class HomeFourContainerScreen extends GetWidget<HomeFourContainerController> {
       case AppRoutes.notificationScreen:
         return NotificationScreen();
       case AppRoutes.profileOneScreen:
-        return MainProject();
+        return ProfileOneScreen();
       default:
         return DefaultWidget();
     }

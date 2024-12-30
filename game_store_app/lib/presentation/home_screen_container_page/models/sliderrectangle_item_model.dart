@@ -1,0 +1,11 @@
+import 'package:get/get.dart';
+
+/// This class is used in the [sliderrectangle_item_widget] screen.
+
+class SliderrectangleItemModel {
+  Rx<String>? id = Rx("");
+
+  String? image;
+  String? title;
+  SliderrectangleItemModel(this.image,this.title);
+}

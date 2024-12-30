@@ -46,9 +46,9 @@ class TrackDriverOneScreen extends GetWidget<TrackDriverOneController> {
               body: Container(
                   width: size.width,
                   padding: getPadding(left: 0, top: 10, right: 0, bottom: 15),
-                  child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.start,
+                  child: ListView(
+                      // crossAxisAlignment: CrossAxisAlignment.start,
+                      // mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Container(
                           width: double.infinity,

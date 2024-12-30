@@ -11,16 +11,15 @@ class SplashController extends GetxController {
    bool isIntro =  await PrefUtils.getIsIntro();
    super.onReady();
    Timer(const Duration(seconds: 3), () {
-     Get.toNamed(AppRoutes.mainproject);
 
-    // if(isIntro){
-    //  Get.toNamed(AppRoutes.onboardingOneScreen);}
-    // else if(isSignIn){
-    //  Get.toNamed(AppRoutes.loginScreenOneScreen);
-    // }
-    // else{
-    //   Get.toNamed(AppRoutes.homeFourContainerScreen);
-    // }
+    if(isIntro){
+     Get.toNamed(AppRoutes.onboardingOneScreen);}
+    else if(isSignIn){
+     Get.toNamed(AppRoutes.loginScreenOneScreen);
+    }
+    else{
+      Get.toNamed(AppRoutes.homeFourContainerScreen);
+    }
    });
   }
 
